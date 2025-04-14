@@ -477,14 +477,14 @@ textarea {
 
 /* Styles pour la navigation au clavier */
 :focus {
-    outline: 2px solid #ffb347;
-    outline-offset: 2px;
+    outline: 2px solid #ffb347 !important;
+    outline-offset: 2px !important;
 }
 
-/* Focus spécifique pour l'evitement */
+/* Focus spécifique pour le skip link */
 .evitement:focus {
-    outline: 2px solid #ffb347;
-    outline-offset: 2px;
+    outline: 2px solid #ffb347 !important;
+    outline-offset: 2px !important;
 }
 
 /* Responsive */
