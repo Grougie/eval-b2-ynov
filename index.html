@@ -33,7 +33,8 @@
       <!-- Section Héros -->
       <div class="hero" role="banner">
         <div class="svg-decoration">
-          <svg viewBox="0 0 1440 320" focusable="false">
+          <!--Masquage du SVG pour le lecteur-->
+          <svg viewBox="0 0 1440 320" focusable="false" aria-hidden="true">
             <path
               fill="#ffb347"
               fill-opacity="0.3"
@@ -42,7 +43,8 @@
           </svg>
         </div>
         <div class="hero-content container">
-          <img src="images/moliere.png" class="hero-image" />
+          <!-- Rajouts d'une description pour l'image(Scène de spectacle Molière)-->
+          <img src="images/moliere.png" class="hero-image" alt="Scène du spectacle Molière"/>
           <div class="hero-text">
             <h3>Molière, le spectacle musical</h3>
             <p>La fabuleuse histoire d'un génie du théâtre français</p>
@@ -91,9 +93,10 @@
               unique en France.
             </p>
           </div>
+          <!-- Changement de l'attribut alt pour l'image-->
           <img
             src="images/scene1.png"
-            alt="Image d'une belle scène"
+            alt="Scène du spectacle Molière"
             class="section-image"
           />
         </div>
@@ -127,7 +130,8 @@
           <h3 id="titre-chiffres">Quelques chiffres marquants</h3>
           <div class="cards">
             <div class="card">
-              <i class="fas fa-users" alt="Icône utilisateurs"></i>
+              <!--Masquage de l'icône pour le lecteur-->
+              <i class="fas fa-users" aria-hidden="true"></i>
               <h3>30 artistes</h3>
               <p>Chanteurs, danseurs, comédiens et musiciens sur scène.</p>
             </div>
@@ -220,13 +224,15 @@
         <div class="container">
           <h3 id="titre-reseaux">Suivez-nous sur les réseaux sociaux</h3>
           <div class="reseaux-links">
+            <!-- Changements des attributs d'accessibilitée pour le lien YouTube-->
             <a
               href="https://www.youtube.com/channel/UCc5t5wb25TAO4bCA1d8yMrQ"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chaîne YouTube officielle du spectacle Molière"
             >
-              <i class="fab fa-youtube" alt="Icône YouTube"></i> YouTube
+              <i class="fab fa-youtube" aria-hidden="true"></i> 
+              <span>YouTube</span>
             </a>
             <a
               href="https://www.facebook.com/moliereloperaurbain/?locale=fr_FR"
