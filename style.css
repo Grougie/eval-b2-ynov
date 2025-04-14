@@ -1,17 +1,17 @@
 :root {
   --color-bg: #0e0e0e;
-  --color-text: #bcbcbc;
-  --color-secondary-text: #8a8a8a;
-  --color-accent: #c17dff;
-  --color-accent-light: #d6a3ff;
+  --color-text: #ffffff;
+  --color-secondary-text: #e0e0e0;
+  --color-accent: #9d4dff;
+  --color-accent-light: #b47dff;
   --color-card-bg: #1a1a1a;
   --color-hover-bg: #292929;
-  --color-focus-outline: #c17dff;
-  --color-bandeau-bg: #c17dff;
-  --color-bandeau-text: #fff;
+  --color-focus-outline: #9d4dff;
+  --color-bandeau-bg: #9d4dff;
+  --color-bandeau-text: #ffffff;
   --color-footer-bg: #1a1a1a;
-  --color-svg: #c17dff;
-  --color-focus-bg: transparent;
+  --color-svg: #9d4dff;
+  --color-focus-bg: rgba(157, 77, 255, 0.1);
 }
 
 /* RESET + BASE */
