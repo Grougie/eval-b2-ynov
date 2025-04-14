@@ -1,7 +1,8 @@
+
 :root {
   --color-bg: #0e0e0e;
-  --color-text: #bcbcbc;
-  --color-secondary-text: #8a8a8a;
+  --color-text: #ffffff;  /* Changement de la couleur du texte vers un blanc qui tranche plus avec le fond pour une meilleure lisibilité */
+  --color-secondary-text: #e0e0e0;
   --color-accent: #c17dff;
   --color-accent-light: #d6a3ff;
   --color-card-bg: #1a1a1a;
