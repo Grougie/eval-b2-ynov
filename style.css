@@ -57,6 +57,7 @@ textarea:focus-visible {
   padding: 1rem;
   text-decoration: none;
   transition: top 0.3s ease;
+  z-index: 1001;
 }
 
 .skip-link:focus-visible {
