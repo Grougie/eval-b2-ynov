@@ -12,6 +12,8 @@
   --color-footer-bg: #1a1a1a;
   --color-svg: #9d4dff;
   --color-focus-bg: rgba(157, 77, 255, 0.1);
+  --color-nav-text: #ffffff;
+  --color-nav-hover: #b47dff;
 }
 
 /* RESET + BASE */
@@ -104,9 +106,13 @@ img {
 }
 
 .navbar a {
-  font-size: 1.125rem;
+  color: var(--color-nav-text);
+  text-decoration: none;
   font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
   position: relative;
+  transition: color 0.3s ease;
 }
 
 .navbar a::after {
@@ -125,8 +131,13 @@ img {
   width: 100%;
 }
 
+.navbar a:hover,
+.navbar a:focus {
+  color: var(--color-nav-hover);
+}
+
 .navbar a.active {
-  color: var(--color-accent);
+  color: var(--color-nav-hover);
 }
 
 /* HERO */
@@ -575,14 +586,23 @@ textarea:focus-visible {
 .form-reservation .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
+  min-width: 200px;
   background-color: var(--color-accent);
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-reservation .btn i {
+  font-size: 1.2rem;
 }
 
 .form-reservation .btn:hover,
