@@ -1,14 +1,14 @@
 :root {
   --color-bg: #0e0e0e;
   --color-text: #bcbcbc;
-  --color-secondary-text: #8a8a8a;
+  --color-secondary-text: #ffffff;
   --color-accent: #c17dff;
   --color-accent-light: #d6a3ff;
   --color-card-bg: #1a1a1a;
   --color-hover-bg: #292929;
   --color-focus-outline: #c17dff;
   --color-bandeau-bg: #c17dff;
-  --color-bandeau-text: #fff;
+  --color-bandeau-text: #0e0e0e;
   --color-footer-bg: #1a1a1a;
   --color-svg: #c17dff;
   --color-focus-bg: transparent;
