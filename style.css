@@ -1,16 +1,16 @@
 :root {
   --color-bg: #0e0e0e;
-  --color-text: #bcbcbc;
-  --color-secondary-text: #8a8a8a;
-  --color-accent: white;
+  --color-text: #ffffff;
+  --color-secondary-text: #cccccc;
+  --color-accent: #ffffff;
   --color-accent-light: #d6a3ff;
   --color-card-bg: #1a1a1a;
   --color-hover-bg: #292929;
-  --color-focus-outline: #c17dff;
-  --color-bandeau-bg: #c17dff;
-  --color-bandeau-text: #fff;
+  --color-focus-outline: #ffffff;
+  --color-bandeau-bg: #8c46e1;
+  --color-bandeau-text: #ffffff;
   --color-footer-bg: #1a1a1a;
-  --color-svg: #c17dff;
+  --color-svg: #8c46e1;
   --color-focus-bg: transparent;
   --color-accent-dark: #a366ff;
 }
@@ -184,7 +184,7 @@ img {
 /* BOUTONS */
 /* Styles pour les boutons */
 .btn {
-  background-color: var(--color-bg);
+  background-color: #333333;
   color: var(--color-text);
   border: 2px solid var(--color-text);
   padding: 0.75rem;
@@ -198,7 +198,7 @@ img {
 
 .btn:hover {
   background-color: var(--color-text);
-  color: var(--color-bg);
+  color: #000000;
 }
 
 .btn:focus {
@@ -307,7 +307,7 @@ img {
 .card i {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--color-accent);
+  color: #ffffff;
 }
 
 .card:hover,
@@ -369,7 +369,7 @@ img {
 }
 
 .reseaux-links a i {
-  color: var(--color-accent);
+  color: #ffffff;
 }
 
 .reseaux-links a:hover,
@@ -423,8 +423,8 @@ textarea {
   width: 100%;
   padding: 0.75rem;
   border-radius: 0.5rem;
-  border: 1px solid #444;
-  background-color: var(--color-card-bg);
+  border: 1px solid #ffffff;
+  background-color: #333333;
   color: var(--color-text);
   font-family: "Inter", sans-serif;
   font-size: 1rem;
@@ -453,47 +453,57 @@ textarea {
 
 .section-intro input::placeholder,
 .section-intro textarea::placeholder {
-  color: var(--color-secondary-text);
+  color: #cccccc;
 }
 
 .section-intro input:focus,
 .section-intro select:focus,
 .section-intro textarea:focus {
-  outline: none;
-  background-color: var(--color-card-bg);
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+  background-color: #444444;
 }
 
 .section-intro .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-accent);
-  color: var(--color-bandeau-text);
+  background-color: #333333;
+  color: var(--color-text);
   padding: 0.75rem;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
-  border: none;
+  border: 2px solid var(--color-text);
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .section-intro .btn:hover,
 .section-intro .btn:focus {
-  background-color: var(--color-accent);
-  outline: none;
+  background-color: var(--color-text);
+  color: #000000;
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
 }
 
 /* Styles pour la navigation au clavier */
 :focus {
-    outline: 2px solid var(--color-text);
-    outline-offset: 2px;
+    outline: 3px solid var(--color-text);
+    outline-offset: 3px;
 }
 
 /* Focus spécifique pour le skip link */
 .evitement:focus {
-    outline: 2px solid var(--color-text);
-    outline-offset: 2px;
+    outline: 3px solid var(--color-text);
+    outline-offset: 3px;
+    background-color: #333333;
+    color: var(--color-text);
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 9999;
 }
 
 /* Responsive */
