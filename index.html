@@ -18,6 +18,8 @@
   </head>
 
   <body>
+    <a href="#contenu" class="skip-link">Aller au contenu principal</a>
+    
     <div class="navbar">
       <div class="nav-container">
         <div>
@@ -33,7 +35,7 @@
       <!-- Section Héros -->
       <div class="hero" role="banner">
         <div class="svg-decoration">
-          <svg viewBox="0 0 1440 320" focusable="false">
+          <svg viewBox="0 0 1440 320" focusable="false" aria-hidden="true">
             <path
               fill="#ffb347"
               fill-opacity="0.3"
@@ -42,13 +44,13 @@
           </svg>
         </div>
         <div class="hero-content container">
-          <img src="images/moliere.png" class="hero-image" />
+          <img src="images/moliere.png" class="hero-image" alt="Portrait de Molière" />
           <div class="hero-text">
-            <h3>Molière, le spectacle musical</h3>
+            <h1>Molière, le spectacle musical</h1>
             <p>La fabuleuse histoire d'un génie du théâtre français</p>
             <a href="infos.html#billetterie" class="btn">
-              <i class="fas fa-ticket-alt" alt="Icône billet"></i>
-              <span>Cliquez ici</span>
+              <i class="fas fa-ticket-alt" aria-hidden="true"></i>
+              <span>Réserver vos places</span>
             </a>
           </div>
         </div>
@@ -56,7 +58,7 @@
 
       <!-- Citation -->
       <div class="bandeau-citation">
-        <h6 id="titre-citation">Citation de Molière</h6>
+        <h2 id="titre-citation">Citation de Molière</h2>
         <p>
           "Le devoir de la comédie est de corriger les hommes en les
           divertissant." — Molière
@@ -81,7 +83,7 @@
             </p>
             <p>
               Ce spectacle retrace avec fougue et audace le destin de
-              Jean-Baptiste Poquelin, de ses débuts dans l’Illustre Théâtre à sa
+              Jean-Baptiste Poquelin, de ses débuts dans l'Illustre Théâtre à sa
               consécration auprès de Louis XIV.
             </p>
             <p>
@@ -134,7 +136,7 @@
             <div class="card">
               <i class="fas fa-mask" alt="Icône masque"></i>
               <h3>52 chansons</h3>
-              <p>De "Rêver j’en ai l’habitude" à "On se moque".</p>
+              <p>De "Rêver j'en ai l'habitude" à "On se moque".</p>
             </div>
             <div class="card">
               <i class="fas fa-award" aria-hidden="true"></i>
@@ -152,10 +154,10 @@
         aria-labelledby="titre-galerie"
       >
         <div class="container">
-          <h4 id="titre-galerie">Galerie photos du spectacle</h4>
+          <h2 id="titre-galerie">Galerie photos du spectacle</h2>
           <div class="gallery">
-            <img src="images/scene1.png" />
-            <img src="images/scene2.jpg" alt="Scène illustrative" />
+            <img src="images/scene1.png" alt="Scène du spectacle Molière" />
+            <img src="images/scene2.jpg" alt="Scène du spectacle Molière" />
           </div>
         </div>
       </section>
@@ -196,7 +198,7 @@
             <div class="card">
               <img
                 src="images/abi.jpg"
-                alt="Portrait d’Abi Bernadoth, interprète du Prince de Conti"
+                alt="Portrait d'Abi Bernadoth, interprète du Prince de Conti"
               />
               <h3>Abi Bernadoth</h3>
               <p>Prince de Conti</p>
@@ -207,7 +209,7 @@
 
       <!-- Bandeau storytelling -->
       <div class="bandeau-citation">
-        <h6 id="titre-story">Esprit du spectacle</h6>
+        <h2 id="titre-story">Esprit du spectacle</h2>
         <p>Une œuvre pop et engagée, entre hommage classique et slam urbain.</p>
       </div>
 
