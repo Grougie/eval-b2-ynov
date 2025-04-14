@@ -406,6 +406,11 @@ fieldset.form-group legend {
   margin-bottom: 0.25rem;
 }
 
+.form-group label.exemples {
+  font-style: italic;
+  font-weight: 400;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
