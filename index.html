@@ -22,7 +22,8 @@
     <!-- Lien d'évitement ajouté en premier élément -->
     <a href="#contenu" class="skip-link">Aller au contenu principal</a>
 
-    <div class="navbar">
+    <!-- Correction sémantique : remplacement div par nav -->
+    <nav class="navbar">
       <div class="nav-container">
         <div>
           <a href="index.html" class="active" aria-current="page">Accueil</a>
@@ -31,7 +32,7 @@
           <a href="infos.html">Infos & Réservation</a>
         </div>
       </div>
-    </div>
+    </nav>
 
     <main id="contenu">
       <!-- Section Héros -->
@@ -48,7 +49,7 @@
         <div class="hero-content container">
           <img src="images/moliere.png" class="hero-image" />
           <div class="hero-text">
-            <h3>Molière, le spectacle musical</h3>
+            <h1>Molière, le spectacle musical</h1> <!-- correction de la hiérarchie des titres -->
             <p>La fabuleuse histoire d'un génie du théâtre français</p>
             <a href="infos.html#billetterie" class="btn">
               <i class="fas fa-ticket-alt" alt="Icône billet"></i>
@@ -110,7 +111,7 @@
         aria-labelledby="titre-points"
       >
         <div class="container">
-          <h4 id="titre-points">Les points forts du spectacle</h4>
+          <h3 id="titre-points">Les points forts du spectacle</h3> <!-- correction de la hiérarchie des titres -->
           <p>52 chansons originales mêlant slam, opéra urbain et pop.</p>
           <p>Une scénographie moderne avec décors mobiles et effets visuels.</p>
           <p>
