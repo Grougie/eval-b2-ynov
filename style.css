@@ -519,3 +519,38 @@ textarea {
 .skip-link:focus {
   top: 0;
 }
+
+/* Focus styles */
+:focus-visible {
+  outline: 3px solid var(--color-focus-outline);
+  outline-offset: 4px;
+}
+
+/* Boutons et liens */
+.btn:focus-visible,
+.navbar a:focus-visible,
+.reseaux-links a:focus-visible {
+  outline: 3px solid var(--color-focus-outline);
+  outline-offset: 4px;
+  background-color: var(--color-focus-bg);
+}
+
+/* Cartes */
+.card:focus-within {
+  outline: 3px solid var(--color-focus-outline);
+  outline-offset: 4px;
+  transform: translateY(-5px);
+}
+
+/* Formulaire */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-focus-outline);
+  outline-offset: 2px;
+}
+
+/* Suppression du focus par défaut pour la souris */
+:focus:not(:focus-visible) {
+  outline: none;
+}
