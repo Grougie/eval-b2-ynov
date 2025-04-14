@@ -24,7 +24,7 @@
       <a href="#footer" class="skip-link">Aller au pied de page</a>
     </div>
     <header>
-      <nav class="navbar" aria-label="Navigation principale">
+      <nav class="navbar" id="navigation" aria-label="Navigation principale">
           <div class="nav-container">
             <div>
               <a href="index.html" class="active" aria-current="page">Accueil</a>
@@ -37,7 +37,7 @@
       
     </header>
    
-    <main id="contenu">
+    <main id="main">
       <!-- Section Héros -->
       <div class="hero" role="banner">
         <div class="svg-decoration">
@@ -55,7 +55,7 @@
             <h3>Molière, le spectacle musical</h3>
             <p>La fabuleuse histoire d'un génie du théâtre français</p>
             <a href="infos.html#billetterie" class="btn">
-              <i class="fas fa-ticket-alt" alt="Icône billet"></i>
+              <i class="fas fa-ticket-alt" alt="Icône billet" aria-hidden="true"></i>
               <span>Cliquez ici</span>
             </a>
           </div>
@@ -102,6 +102,7 @@
           <img
             src="images/scene1.png"
             alt="Image d'une belle scène"
+            aria-hidden="true"
             class="section-image"
           />
         </div>
@@ -135,12 +136,12 @@
           <h3 id="titre-chiffres">Quelques chiffres marquants</h3>
           <div class="cards">
             <div class="card">
-              <i class="fas fa-users" alt="Icône utilisateurs"></i>
+              <i class="fas fa-users" alt="Icône utilisateurs" aria-hidden="true"></i>
               <h3>30 artistes</h3>
               <p>Chanteurs, danseurs, comédiens et musiciens sur scène.</p>
             </div>
             <div class="card">
-              <i class="fas fa-mask" alt="Icône masque"></i>
+              <i class="fas fa-mask" alt="Icône masque" aria-hidden="true"></i>
               <h3>52 chansons</h3>
               <p>De "Rêver j’en ai l’habitude" à "On se moque".</p>
             </div>
@@ -162,8 +163,8 @@
         <div class="container">
           <h4 id="titre-galerie">Galerie photos du spectacle</h4>
           <div class="gallery">
-            <img src="images/scene1.png" />
-            <img src="images/scene2.jpg" alt="Scène illustrative" />
+            <img src="images/scene1.png" alt="Scène du spectacle montrant les acteurs principaux" />
+            <img src="images/scene2.jpg" alt="Scène illustrative"  />
           </div>
         </div>
       </section>
@@ -181,6 +182,7 @@
               <img
                 src="images/petitom.jpg"
                 alt="Portrait de PETiTOM, interprète de Molière"
+                aria-hidden="true"
               />
               <h3>PETiTOM</h3>
               <p>Molière</p>
@@ -189,6 +191,7 @@
               <img
                 src="images/loujean.png"
                 alt="Portrait de Lou Jean, interprète d'Armande Béjart"
+                aria-hidden="true"
               />
               <h3>Lou Jean</h3>
               <p>Armande Béjart</p>
@@ -197,6 +200,7 @@
               <img
                 src="images/shaina.jpeg"
                 alt="Portrait de Shaïna Pronzola, interprète de Marquise"
+                aria-hidden="true"
               />
               <h3>Shaïna Pronzola</h3>
               <p>Marquise</p>
@@ -205,6 +209,7 @@
               <img
                 src="images/abi.jpg"
                 alt="Portrait d’Abi Bernadoth, interprète du Prince de Conti"
+                aria-hidden="true"
               />
               <h3>Abi Bernadoth</h3>
               <p>Prince de Conti</p>
@@ -234,7 +239,7 @@
               rel="noopener noreferrer"
               aria-label="Chaîne YouTube officielle du spectacle Molière"
             >
-              <i class="fab fa-youtube" alt="Icône YouTube"></i> YouTube
+              <i class="fab fa-youtube" alt="Icône YouTube" aria-hidden="true"></i> YouTube
             </a>
             <a
               href="https://www.facebook.com/moliereloperaurbain/?locale=fr_FR"
@@ -242,7 +247,7 @@
               rel="noopener noreferrer"
               aria-label="Page Facebook officielle du spectacle Molière"
             >
-              <i class="fab fa-facebook" alt="Icône Facebook"></i> Facebook
+              <i class="fab fa-facebook" alt="Icône Facebook" aria-hidden="true"></i> Facebook
             </a>
             <a
               href="https://www.instagram.com/molierelespectaclemusical/"
@@ -250,7 +255,7 @@
               rel="noopener noreferrer"
               aria-label="Profil Instagram du spectacle Molière"
             >
-              <i class="fab fa-instagram" alt="Icône Instagram"></i> Instagram
+              <i class="fab fa-instagram" alt="Icône Instagram" aria-hidden="true"></i> Instagram
             </a>
           </div>
         </div>
