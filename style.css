@@ -475,6 +475,18 @@ textarea {
   outline: none;
 }
 
+/* Styles pour la navigation au clavier */
+:focus {
+    outline: 2px solid #ffb347;
+    outline-offset: 2px;
+}
+
+/* Focus spécifique pour l'evitement */
+.evitement:focus {
+    outline: 2px solid #ffb347;
+    outline-offset: 2px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   h2 {
