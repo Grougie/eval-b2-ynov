@@ -47,6 +47,11 @@ h3 {
   font-weight: 700;
 }
 
+h1 {
+  /* Modification: Ajout de styles pour h1 qui était précédemment h3 dans hero-text */
+  font-size: 3rem;
+}
+
 h2 {
   font-size: 2.5rem;
 }
@@ -97,6 +102,14 @@ img {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
+/* Modification: Ajout de styles pour la liste dans nav */
+.nav-container ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
 .nav-container {
   display: flex;
   justify-content: center;
@@ -129,7 +142,7 @@ img {
   color: var(--color-accent);
 }
 
-/* HERO */
+/* HERO - adapté pour header */
 .hero {
   background: linear-gradient(135deg, var(--color-card-bg), var(--color-bg));
   padding: 5rem 0 4rem 0;
@@ -165,6 +178,7 @@ img {
   width: 100%;
 }
 
+/* Modification: Mise à jour pour utiliser h1 au lieu de h3 */
 .hero-text h1 {
   font-size: 3rem;
 }
@@ -187,6 +201,8 @@ img {
   transition: background 0.3s ease;
   font-family: "Inter", sans-serif;
   margin: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -197,7 +213,7 @@ img {
   outline-offset: 0;
 }
 
-/* BANDEAUX */
+/* BANDEAUX - adapté pour blockquote et aside */
 .bandeau-citation,
 .bandeau-story {
   background-color: var(--color-bandeau-bg);
@@ -211,6 +227,14 @@ img {
 .bandeau-citation p,
 .bandeau-story p {
   text-align: center;
+}
+
+/* Modification: Style pour les citations et les h2 dans blockquote */
+blockquote.bandeau-citation h2,
+aside.bandeau-citation h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-bandeau-text);
 }
 
 /* SECTIONS */
@@ -267,7 +291,28 @@ img {
   color: var(--color-accent);
 }
 
-/* CARDS */
+/* Modification: Style pour la liste à puces des points forts */
+section ul:not(.list-points) {
+  list-style-type: none;
+  padding: 0;
+}
+
+section ul:not(.list-points) li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section ul:not(.list-points) li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* CARDS - adapté pour article */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -317,7 +362,7 @@ img {
   font-family: "Inter", sans-serif;
 }
 
-/* GALLERY */
+/* GALLERY - adapté pour figure et figcaption */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -325,11 +370,24 @@ img {
   align-items: center;
 }
 
+.gallery figure {
+  margin: 0;
+}
+
 .gallery img {
   width: 100%;
   height: 250px;
   object-fit: cover;
   border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Modification: Style pour figcaption */
+.gallery figcaption {
+  font-size: 0.9rem;
+  color: var(--color-secondary-text);
+  text-align: center;
+  padding: 0.5rem 0;
 }
 
 /* RESEAUX SOCIAUX */
@@ -337,7 +395,8 @@ img {
   padding: 4rem 0;
 }
 
-.section-reseaux h3 {
+/* Modification: Mise à jour pour les h2 dans les sections */
+.section-reseaux h2 {
   text-align: center;
 }
 
@@ -372,7 +431,7 @@ img {
 }
 
 /* FOOTER */
-.footer {
+footer.footer {
   background-color: var(--color-footer-bg);
   padding: 2rem 0;
   text-align: center;
@@ -383,13 +442,14 @@ img {
   margin-bottom: 0.5rem;
 }
 
-/* FORMULAIRE */
-
-.form-reservation {
+/* FORMULAIRE - adapté pour form */
+form.reservation-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 2rem;
+  max-width: 600px;
+  margin: 2rem auto 0;
 }
 
 .form-group,
@@ -440,6 +500,7 @@ fieldset.form-group input[type="checkbox"] {
 
 textarea {
   resize: vertical;
+  min-height: 100px;
 }
 
 .section-intro input::placeholder,
@@ -452,31 +513,42 @@ textarea {
 .section-intro textarea:focus {
   outline: none;
   background-color: var(--color-card-bg);
+  border-color: var(--color-accent);
 }
 
+/* Modification: Style modifié pour le bouton submit avec span */
 .section-intro .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-accent);
   color: var(--color-bandeau-text);
-  padding: 0.75rem;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px; /* Changé de 50% à 50px pour accommoder le texte */
+  width: auto; /* Modifié pour s'adapter au contenu */
+  height: auto; /* Modifié pour s'adapter au contenu */
   border: none;
   cursor: pointer;
   transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.section-intro .btn i {
+  margin-right: 0.5rem;
 }
 
 .section-intro .btn:hover,
 .section-intro .btn:focus {
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-light);
   outline: none;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  
   h2 {
     font-size: 2rem;
   }
@@ -489,17 +561,28 @@ textarea {
     max-width: 90%;
   }
 
-  .navbar ul {
+  /* Modification: Ajustement pour les listes de navigation responsive */
+  .navbar .nav-container ul {
     gap: 1rem;
     flex-wrap: wrap;
   }
 
-  .form-reservation {
+  form.reservation-form {
     gap: 1rem;
   }
 
   button[type="submit"] {
     width: 100%;
     justify-content: center;
+  }
+  
+  /* Modification: Ajustement pour la galerie en vue mobile */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Modification: Ajustement pour les cartes en vue mobile */
+  .cards {
+    grid-template-columns: 1fr;
   }
 }
