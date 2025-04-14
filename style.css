@@ -450,7 +450,7 @@ textarea {
 .section-intro input:focus,
 .section-intro select:focus,
 .section-intro textarea:focus {
-  outline: none;
+  outline: 3px solid var(--color-focus-outline);
   background-color: var(--color-card-bg);
 }
 
