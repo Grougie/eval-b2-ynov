@@ -94,30 +94,60 @@
         <div class="container">
           <h2 id="titre-form">Réservez vos places</h2>
 
-          <form class="form-reservation">
+          <form class="form-reservation" method="post" action="#" novalidate>
             <div class="form-group">
-              <label for="prenom">Prénom</label>
-              <input type="text" id="prenom" name="prenom" required />
+              <label for="prenom">Prénom <span class="required">*</span></label>
+              <input 
+                type="text" 
+                id="prenom" 
+                name="prenom" 
+                required 
+                aria-required="true"
+                placeholder="Votre prénom"
+              />
             </div>
 
             <div class="form-group">
-              <label for="nom">Nom</label>
-              <input type="text" id="nom" name="nom" required />
+              <label for="nom">Nom <span class="required">*</span></label>
+              <input 
+                type="text" 
+                id="nom" 
+                name="nom" 
+                required 
+                aria-required="true"
+                placeholder="Votre nom"
+              />
             </div>
 
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
+              <label for="email">Email <span class="required">*</span></label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                aria-required="true"
+                placeholder="votre@email.com"
+              />
             </div>
 
             <div class="form-group">
-              <label for="places">Nombre de places</label>
-              <input type="number" id="places" name="places" min="1" required />
+              <label for="places">Nombre de places <span class="required">*</span></label>
+              <input 
+                type="number" 
+                id="places" 
+                name="places" 
+                min="1" 
+                max="10" 
+                required 
+                aria-required="true"
+                placeholder="1"
+              />
             </div>
 
             <div class="form-group">
-              <label for="date">Date de la représentation</label>
-              <select id="date" name="date" required>
+              <label for="date">Date de la représentation <span class="required">*</span></label>
+              <select id="date" name="date" required aria-required="true">
                 <option value="">Sélectionnez une date</option>
                 <option value="2025-04-12">12 avril 2025 - Nantes</option>
                 <option value="2025-04-19">19 avril 2025 - Dijon</option>
@@ -152,12 +182,17 @@
 
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Votre message"></textarea>
+              <textarea 
+                id="message" 
+                name="message" 
+                placeholder="Votre message (optionnel)"
+                aria-label="Message complémentaire"
+              ></textarea>
             </div>
 
             <button type="submit" class="btn">
               <i class="fas fa-paper-plane" aria-hidden="true"></i>
-              <span>Envoyer</span>
+              <span>Envoyer la réservation</span>
             </button>
           </form>
         </div>
