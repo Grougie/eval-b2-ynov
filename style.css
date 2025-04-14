@@ -1,13 +1,14 @@
 :root {
   --color-bg: #0e0e0e;
-  --color-text: #bcbcbc;
-  --color-secondary-text: #8a8a8a;
-  --color-accent: #c17dff;
-  --color-accent-light: #d6a3ff;
+  --color-text: #ffffff; /* brighter color */
+  --color-secondary-text: #ffffff; /* brighter color */
+  --color-accent: #68448a; /* darker */
+  --color-accent-text: #b375ee; /* darker */
+  --color-accent-light: #290c41; /* Change hover color(darker)*/
   --color-card-bg: #1a1a1a;
   --color-hover-bg: #292929;
   --color-focus-outline: #c17dff;
-  --color-bandeau-bg: #c17dff;
+  --color-bandeau-bg: #49325f; /* darker */
   --color-bandeau-text: #fff;
   --color-footer-bg: #1a1a1a;
   --color-svg: #c17dff;
@@ -72,6 +73,14 @@ a:focus-visible {
   background-color: var(--color-focus-bg);
 }
 
+a.skip-link {
+  position: absolute;
+  left: -99999px;
+}
+a.skip-link:focus {
+  position: static;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -126,7 +135,7 @@ img {
 }
 
 .navbar a.active {
-  color: var(--color-accent);
+  color: var(--color-accent-text);
 }
 
 /* HERO */
@@ -171,7 +180,7 @@ img {
 
 .hero-text p {
   font-size: 1.25rem;
-  color: var(--color-accent);
+  color: var(--color-accent-text);
 }
 
 /* BOUTONS */
