@@ -182,25 +182,20 @@ img {
 
 /* BOUTONS */
 .btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  background-color: #e67e22; /* Couleur plus foncée pour un meilleur contraste */
+  background-color: #d35400; /* Couleur plus foncée pour un meilleur contraste */
   color: #ffffff; /* Texte blanc pour un contraste suffisant */
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
   font-weight: bold;
-  transition: background 0.3s ease;
   font-family: "Inter", sans-serif;
-  margin: 20px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: #d35400; /* Couleur plus foncée au survol */
-  color: var(--color-bandeau-text);
-  outline: none;
-  outline-offset: 0;
+  background-color: #b84300; /* Couleur encore plus foncée au survol */
 }
 
 /* BANDEAUX */
@@ -484,13 +479,20 @@ textarea {
 /* Titres */
 h2#titre-citation,
 h2#titre-story {
-  color: #f5f5f5; /* Couleur plus claire pour un meilleur contraste */
+  color: #ffffff; /* Texte blanc pour un contraste suffisant */
+  background-color: #d35400; /* Fond plus foncé pour un meilleur contraste */
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
 }
 
 /* Bloc de citation */
 blockquote.bandeau-citation {
-  background-color: #e67e22; /* Couleur plus foncée pour le fond */
+  background-color: #d35400; /* Couleur plus foncée pour le fond */
   color: #ffffff; /* Texte blanc pour un contraste suffisant */
+  padding: 2rem;
+  border-radius: 5px;
+  font-style: italic;
 }
 
 blockquote.bandeau-citation p {
@@ -499,8 +501,11 @@ blockquote.bandeau-citation p {
 
 /* Bandeau storytelling */
 div.bandeau-citation {
-  background-color: #e67e22; /* Couleur plus foncée pour le fond */
+  background-color: #d35400; /* Couleur plus foncée pour le fond */
   color: #ffffff; /* Texte blanc pour un contraste suffisant */
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
 }
 
 div.bandeau-citation p {
