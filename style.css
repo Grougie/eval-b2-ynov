@@ -386,24 +386,40 @@ img {
 /* FORMULAIRE */
 
 .form-reservation {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.form-group,
-fieldset.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.form-group {
+  margin-bottom: 1.5rem;
 }
 
-.form-group label,
-fieldset.form-group legend {
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
-  margin-bottom: 0.25rem;
+}
+
+.required {
+  color: var(--color-accent);
+  margin-left: 0.25rem;
+}
+
+.error-message {
+  display: block;
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+input:invalid,
+select:invalid {
+  border-color: #ff4444;
+}
+
+input:invalid:focus,
+select:invalid:focus {
+  outline-color: #ff4444;
 }
 
 input[type="text"],
@@ -553,4 +569,28 @@ textarea:focus-visible {
 /* Suppression du focus par défaut pour la souris */
 :focus:not(:focus-visible) {
   outline: none;
+}
+
+/* Style du bouton de soumission */
+.form-reservation .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-reservation .btn:hover,
+.form-reservation .btn:focus {
+  background-color: var(--color-accent-light);
+}
+
+.form-reservation .btn:focus-visible {
+  outline: 3px solid var(--color-focus-outline);
+  outline-offset: 2px;
 }
