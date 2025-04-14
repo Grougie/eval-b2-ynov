@@ -265,6 +265,56 @@ aside.bandeau-citation h2 {
   align-items: center;
 }
 
+/* AJOUT: Styles pour le lien d'évitement */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-accent);
+  color: white;
+  padding: 8px;
+  z-index: 1001;
+  transition: top 0.3s ease;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--color-focus-outline);
+}
+
+/* AJOUT: Styles de focus améliorés pour les éléments interactifs */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-focus-outline);
+  outline-offset: 2px;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-focus-outline);
+  outline-offset: 2px;
+  background-color: var(--color-accent-light);
+}
+
+/* AJOUT: Assurance que tous les éléments interactifs ont un état de focus visible */
+.card a:focus-visible {
+  outline: 3px solid var(--color-focus-outline);
+  outline-offset: 4px;
+}
+
+/* AJOUT: Pour s'assurer que le contenu principal peut recevoir le focus */
+main:focus {
+  outline: none;
+}
+
+/* AJOUT: Amélioration de l'accessibilité des cases à cocher */
+input[type="checkbox"]:focus-visible + label {
+  outline: 2px solid var(--color-focus-outline);
+  outline-offset: 2px;
+}
+
 @media (max-width: 768px) {
   .grid-2 {
     grid-template-columns: 1fr;
