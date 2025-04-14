@@ -2,7 +2,7 @@
   --color-bg: #0e0e0e;
   --color-text: #bcbcbc;
   --color-secondary-text: #8a8a8a;
-  --color-accent: #c17dff;
+  --color-accent: white;
   --color-accent-light: #d6a3ff;
   --color-card-bg: #1a1a1a;
   --color-hover-bg: #292929;
@@ -12,6 +12,7 @@
   --color-footer-bg: #1a1a1a;
   --color-svg: #c17dff;
   --color-focus-bg: transparent;
+  --color-accent-dark: #a366ff;
 }
 
 /* RESET + BASE */
@@ -55,10 +56,16 @@ h3 {
   font-size: 1.75rem;
 }
 
+/* Styles pour les liens */
 a {
   color: var(--color-text);
   text-decoration: none;
-  transition: color 0.3s ease;
+}
+
+a:hover,
+a:active {
+  color: var(--color-accent);
+  text-decoration: underline;
 }
 
 a:focus,
@@ -175,26 +182,28 @@ img {
 }
 
 /* BOUTONS */
+/* Styles pour les boutons */
 .btn {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: 2px solid var(--color-text);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  background-color: var(--color-accent);
-  color: var(--color-bandeau-text);
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-  font-family: "Inter", sans-serif;
-  margin: 20px;
+  gap: 0.5rem;
 }
 
-.btn:hover,
+.btn:hover {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
 .btn:focus {
-  background-color: var(--color-accent-light);
-  color: var(--color-bandeau-text);
-  outline: none;
-  outline-offset: 0;
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
 }
 
 /* BANDEAUX */
@@ -477,14 +486,14 @@ textarea {
 
 /* Styles pour la navigation au clavier */
 :focus {
-    outline: 2px solid #ffb347 !important;
-    outline-offset: 2px !important;
+    outline: 2px solid var(--color-text);
+    outline-offset: 2px;
 }
 
 /* Focus spécifique pour le skip link */
 .evitement:focus {
-    outline: 2px solid #ffb347 !important;
-    outline-offset: 2px !important;
+    outline: 2px solid var(--color-text);
+    outline-offset: 2px;
 }
 
 /* Responsive */
