@@ -462,7 +462,7 @@ textarea {
   color: var(--color-bandeau-text);
   padding: 0.75rem;
   border-radius: 50%;
-  width: 3rem;
+  width: 15rem;
   height: 3rem;
   border: none;
   cursor: pointer;
